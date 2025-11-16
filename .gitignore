@@ -1,0 +1,19 @@
+# Dependencies
+/smart-traffic-backend/venv/
+/smart-traffic-frontend/node_modules/
+
+# Model files
+*.pt
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db

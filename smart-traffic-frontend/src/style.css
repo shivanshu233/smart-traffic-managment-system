@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #282c34;
+    color: white;
+}
+
+.App {
+    text-align: center;
+}
+
+.header {
+    padding: 20px;
+    background-color: #1e2128;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.button-group button {
+    margin: 10px;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #61dafb;
+    color: #282c34;
+    transition: background-color 0.3s;
+}
+
+.button-group button:hover {
+    background-color: #4fa8c5;
+}
+
+.roi-mapper, .dashboard {
+    margin-top: 20px;
+}
+
+.roi-container {
+    position: relative;
+    display: inline-block;
+    cursor: crosshair;
+}
+
+.roi-container canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.lane-container {
+    border: 2px solid #61dafb;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #1e2128;
+    min-height: 300px;
+}
+
+.lane-container.active {
+    border-color: #ff5722;
+    box-shadow: 0 0 15px #ff5722;
+}
+
+.lane-container h3 {
+    margin-top: 0;
+    color: #61dafb;
+}
+
+.lane-image {
+    width: 100%;
+    border-radius: 5px;
+}
